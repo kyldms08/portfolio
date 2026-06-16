@@ -263,6 +263,33 @@
         </div>
       </div>
 
+      <!-- PROJECT 05 — Federal Document Q&A Assistant -->
+      <div class="project-card">
+        <div class="project-top">
+          <div>
+            <div class="project-meta"><span class="project-num">05</span><span class="project-cat cat-network">AI · LLM Integration</span><span class="project-cat cat-cloud">Python</span></div>
+            <div class="project-title">Federal Document Q&amp;A Assistant</div>
+            <div class="project-sub">Personal Project · Python &amp; OpenAI API · github.com/kyldms08/federal-doc-assistant</div>
+          </div>
+          <div class="project-badges"><span class="badge badge-green">✓ Live on GitHub</span><span class="badge badge-blue">Terminal App</span></div>
+        </div>
+        <div class="project-body">
+          <p class="project-overview">A terminal-based Q&amp;A tool that lets a user load a federal policy or technical document as context and ask natural-language questions against it, with answers generated through the OpenAI API. Built to mirror the kind of document-heavy workflows common at DoD, VA, and other federal agencies — fast, conversational access to information buried in long policy text instead of manual searching. The system prompt is tuned for federal technology policy and cloud infrastructure context, and the model is configured for low-temperature, factual responses with source-section references where possible.</p>
+          <div class="arch">
+<span class="n">User Question</span> <span class="a">+</span> <span class="n">Document Context</span> <span class="a">──→</span> <span class="n">ask.py</span><br>
+<span class="a">    │</span>  <span class="l">System prompt: federal tech policy &amp; cloud specialist</span><br>
+<span class="a">    └──→ </span><span class="n">OpenAI API</span> <span class="l">(gpt-4o-mini · temperature 0.3 · max 500 tokens)</span><br>
+<span class="a">              └──→ </span><span class="n">Answer</span> <span class="l">returned to terminal, cites document section when possible</span><br>
+<span class="w">Secrets: API key loaded via python-dotenv · .env excluded from git</span>
+          </div>
+          <div class="detail-cols two">
+            <div class="detail-block"><h4>What It Does</h4><ul><li>Loads a plain-text federal/policy document as context</li><li>Accepts natural-language questions in the terminal</li><li>OpenAI API (gpt-4o-mini) generates grounded answers</li><li>Low-temperature config favors factual over creative output</li><li>References document sections when possible</li></ul></div>
+            <div class="detail-block"><h4>Engineering &amp; Security Practices</h4><ul><li>API key management via python-dotenv + .gitignore</li><li>Resolved a real secret-exposure incident: GitHub push protection caught a committed key, key was rotated, git history rewritten via orphan branch</li><li>Clean, documented repo with setup README</li></ul></div>
+          </div>
+          <div class="tags"><span class="tag green">Python</span><span class="tag">OpenAI API</span><span class="tag">LLM Integration</span><span class="tag amber">Secrets Management</span><span class="tag amber">Git History Remediation</span><span class="tag purple">GitHub</span></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -274,7 +301,7 @@
       <div class="skill-card"><div class="skill-icon">☁️</div><h3>AWS Cloud Services</h3><div class="skill-pills"><span class="pill">EC2</span><span class="pill">S3</span><span class="pill">Lambda</span><span class="pill">VPC</span><span class="pill">IAM</span><span class="pill">EKS</span><span class="pill">CloudWatch</span><span class="pill">KMS</span><span class="pill">CloudFormation</span><span class="pill">Direct Connect</span><span class="pill">HealthLake</span><span class="pill">Systems Manager</span><span class="pill">AWS Config</span><span class="pill">VGW / CGW</span><span class="pill">NAT Gateway</span><span class="pill">Site-to-Site VPN</span></div></div>
       <div class="skill-card"><div class="skill-icon">🔒</div><h3>Security Engineering</h3><div class="skill-pills"><span class="pill">Zero Trust</span><span class="pill">SASE</span><span class="pill">NGFW</span><span class="pill">IDS/IPS</span><span class="pill">CrowdStrike Falcon</span><span class="pill">Splunk SIEM</span><span class="pill">SOAR</span><span class="pill">DLP</span><span class="pill">AES-256</span><span class="pill">TLS/IPsec</span><span class="pill">IAM Least-Privilege</span><span class="pill">Defense-in-Depth</span><span class="pill">NACLs</span><span class="pill">Security Groups</span></div></div>
       <div class="skill-card"><div class="skill-icon">🌐</div><h3>Network Architecture</h3><div class="skill-pills"><span class="pill">GNS3</span><span class="pill">VyOS</span><span class="pill">SD-WAN</span><span class="pill">TCP/IP</span><span class="pill">OSI Model</span><span class="pill">VLAN</span><span class="pill">802.1Q Trunking</span><span class="pill">DMZ</span><span class="pill">VPC Design</span><span class="pill">OSPF</span><span class="pill">ACLs</span><span class="pill">Zone Firewall</span><span class="pill">DHCP</span><span class="pill">LucidChart</span></div></div>
-      <div class="skill-card"><div class="skill-icon">⚙️</div><h3>Automation &amp; IaC</h3><div class="skill-pills"><span class="pill">Terraform</span><span class="pill">Ansible</span><span class="pill">CloudFormation</span><span class="pill">Kubernetes</span><span class="pill">Docker</span><span class="pill">CI/CD</span><span class="pill">GitLab</span><span class="pill">Python</span><span class="pill">Shell Scripting</span><span class="pill">HPA</span></div></div>
+      <div class="skill-card"><div class="skill-icon">⚙️</div><h3>Automation &amp; IaC</h3><div class="skill-pills"><span class="pill">Terraform</span><span class="pill">Ansible</span><span class="pill">CloudFormation</span><span class="pill">Kubernetes</span><span class="pill">Docker</span><span class="pill">CI/CD</span><span class="pill">GitLab</span><span class="pill">Python</span><span class="pill">Shell Scripting</span><span class="pill">HPA</span><span class="pill">OpenAI API</span><span class="pill">LLM Integration</span></div></div>
       <div class="skill-card"><div class="skill-icon">📋</div><h3>Compliance Frameworks</h3><div class="skill-pills"><span class="pill">HIPAA</span><span class="pill">PCI DSS</span><span class="pill">GDPR</span><span class="pill">CCPA</span><span class="pill">NIST SP 800-53</span><span class="pill">FIPS 140-2</span><span class="pill">Zero Trust (NIST 800-207)</span><span class="pill">ITIL4</span></div></div>
       <div class="skill-card"><div class="skill-icon">🐧</div><h3>Systems &amp; Certifications</h3><div class="skill-pills"><span class="pill">Linux (LPI)</span><span class="pill">CompTIA Security+</span><span class="pill">CompTIA Network+</span><span class="pill">CompTIA A+</span><span class="pill">AWS Dev Associate</span><span class="pill">AWS CCP</span><span class="pill">ITIL4</span></div></div>
     </div>
@@ -287,7 +314,7 @@
         <div class="section-eyebrow">Background</div>
         <h2 class="section-title">About <em>Me</em></h2>
         <div class="about-text">
-          <p>I'm a non-traditional student who made a deliberate pivot into technology, choosing Western Governors University for its competency-based model. I graduated in June 2026 with a B.S. in Cloud and Network Engineering, seven industry certifications, and a project portfolio built on real enterprise problems.</p>
+          <p>I'm a non-traditional student who made a deliberate pivot into technology, choosing Western Governors University for its competency-based model. I graduated in May 2026 with a B.S. in Cloud and Network Engineering, seven industry certifications, and a project portfolio built on real enterprise problems.</p>
           <p>My work spans multi-cloud security architecture (SASE, AWS, Azure, GCP), AI-driven network design with live GNS3 topologies, healthcare compliance (HIPAA, FHIR, PCI DSS), and infrastructure automation with Terraform, Kubernetes, and CI/CD pipelines.</p>
           <p>I'm targeting Cloud Administrator, Cloud Security Engineer, and Security Analyst roles in the DC/VA area or remote. Open to full-time and contract positions.</p>
         </div>
@@ -299,7 +326,7 @@
       <div>
         <div class="stat-grid">
           <div class="stat"><div class="stat-n">7</div><div class="stat-l">Certifications</div></div>
-          <div class="stat"><div class="stat-n">4</div><div class="stat-l">Projects</div></div>
+          <div class="stat"><div class="stat-n">5</div><div class="stat-l">Projects</div></div>
           <div class="stat"><div class="stat-n">2</div><div class="stat-l">WGU Awards</div></div>
           <div class="stat"><div class="stat-n" style="font-size:1.3rem">Jun 26</div><div class="stat-l">Diploma</div></div>
         </div>
